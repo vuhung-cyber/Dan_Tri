@@ -1,0 +1,69 @@
+*{
+    margin: 0;     
+    padding: 0;
+}
+
+#header{
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.on_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.national{
+    margin: auto;
+    padding: 3px;
+    border: 1px solid;
+    border-color: rgb(85, 84, 84);
+    font-family: 'Times New Roman';
+    border-radius: 30px;
+}
+
+.ben_phai_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.search{
+    padding: 0 10px;
+    display: flex;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 30px;
+}
+
+.tim_kiem{
+    border: none;
+    outline: none;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+}
+
+.temperature{
+    display: flex;
+}
+
+.may{
+    width: 50px;
+    height: auto;
+}
+
+.log_in{
+    border: none;
+    background-color: white;
+    outline: none;
+}
