@@ -7,11 +7,11 @@
     margin: auto;
     padding: 0;
     width: 80%;
-    height: 30px;
+    height: auto;
 }
 
-a {
-    text-decoration: none;
+#test{
+    text-decoration: none;  
 }
 
 .on_top{
@@ -21,12 +21,13 @@ a {
 }
 
 .national{
-    margin: auto;
     padding: 3px;
     border: 1px solid;
     border-color: rgb(85, 84, 84);
     font-family: 'Times New Roman';
     border-radius: 30px;
+   
+    color: black;
 }
 
 .ben_phai_logo{
@@ -53,8 +54,16 @@ a {
     height: 30px;
 }
 
-.temperature{
-    display: flex;
+
+.temperature_local{
+    font-size: 8;
+    color: rgb(184, 184, 184);
+    text-align: right;
+}
+
+.tempe{
+    width: 100%;    
+    text-align: right;
 }
 
 .may{
@@ -66,4 +75,224 @@ a {
     border: none;
     background-color: white;
     outline: none;
+}
+
+#task_bar{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa{
+    color: black;
+}
+
+hr.container{
+    margin-top: 0;
+}
+
+.home {
+    height: 32px;
+    cursor: pointer;
+}
+
+.home a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home:hover {
+    border-bottom: 3px solid rgb(13, 148, 13);
+}
+
+.home div {
+    position: fixed;
+}
+
+.content{
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content ol{
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.content a{
+    padding: 10px 14px;
+    display: block;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    font-weight: normal;
+}
+
+.content a::before {
+    content: "";
+    transition: all 0.25s;
+    width: 0;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.content a:hover:before{
+    width: 100%;
+    content: "- ";
+}
+
+
+.home:hover .content{
+    display: block;
+}
+
+hr{
+    margin-bottom: 1px; 
+}
+
+#bacham{
+    background-color: burlywood;
+    width: 100%;
+    height: 600px;
+    display: none;
+}
+
+.main {
+    display: flex;
+}
+
+.detail {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    cursor: pointer;
+}
+
+.detail li {
+    width: 20%;
+    list-style-type: none;
+}
+
+.detail > li > a{
+    font-weight: bold;
+}
+
+.detail li ol li {
+    width: 100%;
+}
+
+.lienhe{
+    margin: 20px 0;
+    width: 5%;
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    flex-direction: column;
+    border-left: 1px solid;
+    height: 560px;
+}
+
+.lienhe a {
+    margin: 10px 10px;
+    
+    font-weight: bold;
+}
+
+.lienhe hr {
+    margin: 10px;
+}
+
+.tintuc {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bantin1 {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.bantin1 > a{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bantin1 p{
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+}
+
+.tincon{
+    display: flex;
+    margin: 10px 0;
+}
+
+.tincon a{
+    cursor: pointer;
+    margin: 0 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.bantin2 {
+    flex: 2;
+    margin: 0 10px;
+}
+
+.bantin2 > a{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bantin2 p{
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+}
+
+.main_tincon{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tincon2{
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+.bantin3 {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.anh{
+    width: 60%;
+    margin-top: 8px;
+}
+
+.anh_nong_dan{
+    display: flex;
+}
+
+.anh_nong_dan a{
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tet{
+   cursor: pointer;
 }
